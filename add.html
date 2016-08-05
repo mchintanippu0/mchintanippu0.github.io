@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <title>Cal</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="ang_app.js"></script>
+        
+    </head>
+    <body ng-app="app">
+        <div id="main" ng-controller="mainController" align="center">
+
+            <h2>Addition </h2>
+            <form ng-submit="post()">
+                <table>
+                    <tr>
+                        <td>
+                            First Number:
+                        </td>
+                        <td>
+                            <input required type="text" name="name" placeholder="Name" ng-model="n1" class="form-control" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Second Number:
+                        </td>
+                        <td>
+                            <input required type="text" name="contact" placeholder="Contact" ng-model="n2" class="form-control" >
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td align="right">
+                            <input type="Submit" value="Add" class="btn btn-info">
+                        </td>
+                    </tr><tr>
+                        <td>
+                            Result:
+                        </td>
+                        <td>
+                            {{result}}
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>
